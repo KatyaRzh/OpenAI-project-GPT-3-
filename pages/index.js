@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from "./index.module.css";
 
 export default function Home() {
-	const [animalInput, setAnimalInput] = useState("");
+	const [nameInput, setNameInput] = useState("");
 	const [result, setResult] = useState();
 
 	async function onSubmit(event) {
@@ -13,30 +13,27 @@ export default function Home() {
 			headers: {
 				"Content-Type": "application/json",
 			},
-			body: JSON.stringify({ animal: animalInput }),
+			body: JSON.stringify({ name: nameInput }),
 		});
 		const data = await response.json();
 		setResult(data.result);
-		setAnimalInput("");
+		setNameInput("");
 	}
 
 	return (
 		<div>
 			<Head>
 				<title>Generate Startup Names</title>
-				<link rel="icon" href="/dog.png" />
 			</Head>
-
 			<main className={styles.main}>
-				<img src="/dog.png" className={styles.icon} />
 				<h3>Come up with a unique startup name</h3>
 				<form onSubmit={onSubmit}>
 					<input
 						type="text"
-						name="animal"
+						name="company name"
 						placeholder="Food Delivery Service"
-						value={animalInput}
-						onChange={(e) => setAnimalInput(e.target.value)}
+						value={nameInput}
+						onChange={(e) => setNameInput(e.target.value)}
 					/>
 					<input type="submit" value="Generate names" />
 				</form>
