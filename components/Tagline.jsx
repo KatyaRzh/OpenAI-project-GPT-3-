@@ -20,7 +20,7 @@ export default function Tagline() {
 
 	return (
 		<div>
-			<h3>Come up with a unique startup tagline</h3>
+			<h3>🚀 Next: Let's create your unique tagline</h3>
 			<form onSubmit={onSubmit}>
 				<input
 					type="text"

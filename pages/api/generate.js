@@ -18,6 +18,8 @@ export default async function (req, res) {
 	}
 }
 
+console.log("fr");
+
 function generatePrompt(description) {
 	return `Suggest a new and unique startup name based on a description.
           Description: Homes Rent
