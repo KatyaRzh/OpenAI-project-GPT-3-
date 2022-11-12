@@ -47,7 +47,7 @@
 }
 .main input[type="text"] {
 	padding: 12px 16px;
-	border: 1px solid #10a37f;
+	border: 1px solid #a83ecb;
 	border-radius: 4px;
 	margin-bottom: 24px;
 }
@@ -58,7 +58,7 @@
 .main input[type="submit"] {
 	padding: 12px 0;
 	color: #fff;
-	background-color: #10a37f;
+	background-color: #a83ecb;
 	border: none;
 	border-radius: 4px;
 	text-align: center;
