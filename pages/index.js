@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Name from "../components/name";
 import Tagline from "../components/tagline";
-import "./index.module.css";
 
 export default function Home() {
 	return (
@@ -9,7 +8,7 @@ export default function Home() {
 			<Head>
 				<title>Generate Startup Names</title>
 			</Head>
-			<main>
+			<main className="main">
 				<Name />
 				<Tagline />
 			</main>
