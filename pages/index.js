@@ -42,3 +42,25 @@ export default function Home() {
 		</div>
 	);
 }
+
+return (
+	<div>
+		<Head>
+			<title>Generate Startup Names</title>
+		</Head>
+		<main className={styles.main}>
+			<h3>Next: Let's Generate a Catchy Tagline</h3>
+			<form onSubmit={onSubmit}>
+				<input
+					type="text"
+					name="company name"
+					placeholder="Just do it."
+					value={nameInput}
+					onChange={(e) => setNameInput(e.target.value)}
+				/>
+				<input type="submit" value="Generate company tagline" />
+			</form>
+			<div className={styles.result}>{result}</div>
+		</main>
+	</div>
+);
