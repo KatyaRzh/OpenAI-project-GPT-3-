@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Name from "../components/name";
-import Tagline from "../components/tagline";
+import Name from "../components/Name";
+import Tagline from "../components/Tagline";
 
 export default function Home() {
 	return (
