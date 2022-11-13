@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Name() {
+export default function Image() {
 	const [nameInput, setNameInput] = useState("");
 	const [result, setResult] = useState();
 
@@ -9,12 +9,12 @@ export default function Name() {
 	async function onSubmit(event) {
 		event.preventDefault();
 		setIsLoading(true);
-		const response = await fetch("/api/generate", {
+		const response = await fetch("/api/image", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
 			},
-			body: JSON.stringify({ name: nameInput }),
+			body: JSON.stringify({ prompt: nameInput }),
 		});
 		const data = await response.json();
 		setIsLoading(false);
@@ -24,22 +24,24 @@ export default function Name() {
 
 	return (
 		<div>
-			<h3>🦄 Come Up With a Unique Startup Name</h3>
+			<h3>🤡 Last: Generate your company meme</h3>
 			<form onSubmit={onSubmit}>
 				<input
 					type="text"
-					name="company name"
-					placeholder="Food Delivery Service"
+					name="company tagline"
+					placeholder="Just Do It."
 					value={nameInput}
 					onChange={(e) => setNameInput(e.target.value)}
 				/>
 				<input
 					type="submit"
-					value={isLoading ? "Loading..." : "Generate Name"}
+					value={isLoading ? "Loading..." : "Generate Image"}
 					disabled={isLoading}
 				/>
 			</form>
-			<div className="result">{result}</div>
+			<div className="result">
+				<img src={result} />
+			</div>
 		</div>
 	);
 }

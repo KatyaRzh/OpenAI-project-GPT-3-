@@ -72,3 +72,12 @@ html {
 	font-weight: bold;
 	margin-top: 40px;
 }
+
+.result {
+	text-align: center;
+}
+
+.result-image {
+	margin-top: 20px;
+	width: 350px;
+}

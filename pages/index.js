@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Name from "../components/Name";
 import Tagline from "../components/Tagline";
+import Image from "../components/Image";
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 			<main className="main">
 				<Name />
 				<Tagline />
+				<Image />
 			</main>
 		</div>
 	);
