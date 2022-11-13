@@ -20,7 +20,7 @@ export default function Name() {
 
 	return (
 		<div>
-			<h3>🦄 Come up with a unique startup name</h3>
+			<h3>🦄 Come Up With a Unique Startup Name</h3>
 			<form onSubmit={onSubmit}>
 				<input
 					type="text"
@@ -29,7 +29,7 @@ export default function Name() {
 					value={nameInput}
 					onChange={(e) => setNameInput(e.target.value)}
 				/>
-				<input type="submit" value="Generate names" />
+				<input type="submit" value="Generate Names" />
 			</form>
 			<div>{result}</div>
 		</div>

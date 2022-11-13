@@ -20,7 +20,7 @@ export default function Tagline() {
 
 	return (
 		<div>
-			<h3>🚀 Next: Let's create your unique tagline</h3>
+			<h3>🚀 Next: Let's Create Your Unique Tagline</h3>
 			<form onSubmit={onSubmit}>
 				<input
 					type="text"
@@ -29,7 +29,7 @@ export default function Tagline() {
 					value={nameInput}
 					onChange={(e) => setNameInput(e.target.value)}
 				/>
-				<input type="submit" value="Generate taglines" />
+				<input type="submit" value="Generate Taglines" />
 			</form>
 			<div>{result}</div>
 		</div>
