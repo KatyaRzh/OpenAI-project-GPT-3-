@@ -24,7 +24,7 @@ export default function Tagline() {
 
 	return (
 		<div>
-			<h3>🚀 Next: Let's Create Your Unique Tagline</h3>
+			<h4> Next: Let's Create Your Unique Tagline</h4>
 			<form onSubmit={onSubmit}>
 				<input
 					type="text"

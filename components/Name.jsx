@@ -24,7 +24,7 @@ export default function Name() {
 
 	return (
 		<div>
-			<h3>🦄 Come Up With a Unique Startup Name</h3>
+			<h4>Come Up With a Unique Startup Name</h4>
 			<form onSubmit={onSubmit}>
 				<input
 					type="text"

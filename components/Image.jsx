@@ -24,7 +24,7 @@ export default function Image() {
 
 	return (
 		<div>
-			<h3>🤡 Last: Generate your company meme</h3>
+			<h4>Last: Generate your company meme</h4>
 			<form onSubmit={onSubmit}>
 				<input
 					type="text"

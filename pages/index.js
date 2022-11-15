@@ -10,6 +10,15 @@ export default function Home() {
 				<title>Generate Startup Names</title>
 			</Head>
 			<main className="main">
+				<h1>
+					{" "}
+					🦄🎉 Congrats on your decision to become a founder 🎉🦄{" "}
+				</h1>
+				<h2>
+					{" "}
+					Fasten your seatbelt! You'll need to a name, a tagline and a
+					meme for your new startup.
+				</h2>
 				<Name />
 				<Tagline />
 				<Image />
